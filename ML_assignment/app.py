@@ -17,7 +17,7 @@ st.set_page_config(page_title="BITS ML Assignment 2 – Classification Demo", la
 st.title("ML Assignment 2 – Classification Models (UCI Breast Cancer Diagnostic)")
 st.caption("Upload **test CSV**, pick a model, and view metrics, confusion matrix, and ROC curve.")
 
-MODEL_DIR = Path("model")
+MODEL_DIR = Path(__file__).parent / "model"
 
 # --- Load saved artifacts ---
 feature_names = load_feature_names(MODEL_DIR)
